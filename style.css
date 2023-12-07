@@ -1,16 +1,15 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    
 }
 
-#tophederright{
-    background-image: url();
-}
 #appointside{
     display:flex;
     gap: 20px;
@@ -18,8 +17,7 @@ body{
      align-items:center;
 }
 #topbar{
-    width: 80%;
-    margin-inline: auto;
+    padding-inline: 5%;
 }
 #tophede>button{
     font-weight: 900;
@@ -30,17 +28,18 @@ body{
 
 #second{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    margin-inline: auto;
-    width: 80%;
+    text-align: center;
+    padding-inline: 10%;
+    
 }
 .iner_content{
     display: flex;
     flex-direction: column;
     align-items: first baseline baseline;
-    justify-content:space-between;
-    width: 40%;
+    justify-content:space-evenly;
+   
 }
 .iner_content>h4{
     line-height: 2;
@@ -52,12 +51,13 @@ body{
 #picture{
     display: flex;
     justify-content: start;
+    padding-left: 2%;
     
     
 }
 #picture>img{
     width: 40vw;
-    height: 100vh;
+    height: 95vh;
 }
 
 button{
@@ -67,8 +67,9 @@ button{
     box-shadow: 0px 5px 8px gray;
 }
 #sample{
-    width: 80%;
-    margin-top: 80px;
+    
+    margin-top: 40px;
+    padding-inline: 10%;
     margin-inline: auto;
     
 }
@@ -81,10 +82,18 @@ button{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+#box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
 #box>h2{
-    display: flex;
-    justify-content: center; 
+    /* display: inline-block; */
+    width:50% ;
+    
+    text-align: center;
     font-weight: 800;
     font-family: popins;
     animation: servic 2s linear 0s infinite;
@@ -179,7 +188,7 @@ button{
     font-weight: 700;
     margin-top: 5%;
 }
-f.ourth>h1{
+.ourth>h1{
     font-size: 50px;
     margin-bottom: 2%;
 }
@@ -200,14 +209,18 @@ f.ourth>h1{
    height: 30vh;
 }
 #detail{
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    /* grid-template-columns: 2fr 2fr 2fr; */
+    padding-inline: 10%;
+    
+    align-items: center;
     justify-content: space-between;
+    
 }
+
 .box1{
     
     box-sizing: border-box;
@@ -221,7 +234,7 @@ f.ourth>h1{
     box-sizing: border-box;
 }
 #footer{
-    height: 50vh;
+    height: auto;
     width: 100vw;
     background-color: rgb(61, 61, 227);
 }
@@ -231,20 +244,22 @@ f.ourth>h1{
    
 }
 #lastcontent{
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    padding: 10px 0;
+    text-align: center;
     
 }
+#lastcontent p{
+    margin: 0;
+}
 .fdiv{
-    width: 75%;
+    width: 100%;
     margin-inline: auto;
     
-    padding-top: 50px;
+    padding-top: 2%;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 .fdiv>div>h2{
@@ -271,14 +286,17 @@ f.ourth>h1{
     color: white;
     font-size: 40px;
 }
+#box>h2{
+    margin-bottom: 0px;
+}
 .detail2{
     
-    width: 75%;
+    width: 100%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 1%;
     color: white;
     
 }
@@ -291,111 +309,119 @@ f.ourth>h1{
     margin: 0%;
 }
 
-@media screen and (max-width:1200px){
-    .fdiv{
-        
-        width: 95%;
-    }
-}
+
+
 
 @media screen and (max-width:830px) {
     .detail2{
-        width: 95%;
+        
         flex-wrap: wrap;
-        height: auto;
-    }
-    .fdiv{
-        
-        width: 98%;
-    }
-    #footer{
-       
-        width: 100%;
-    }
-    #detail{
-        
-        width: 90%;
+        justify-content:space-evenly
         
     }
-    #second{
-        width: 95%;
-    }
-    #lastcontent{
-        
-        width: 100%;
-    }
-    .fourth{
-        width: 95%;
-        
-    }
-    #sample{
-        width: 98%;
-    }
-    #container{
-        width: 100%;
-    }
+    
     .iner_content>h4{
         line-height: normal;
         font-size: medium;
     }
     #subscrib{
+        display: flex;
+        flex-direction: column;
         text-align: center;
         justify-content: center;
     }
-}
-@media screen and (max-width:660px){
-    
-    #detail{
-        
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
+    #box{
+        padding:20px;
     }
+    #box >h2{
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width:850px){
+    #box{
+        padding:20px;
+    }
+    #box >h2{
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:660px){
+    #topheder{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .iner_content{
+        margin-top: 2%;
+        text-align: center;
+        
+
+    }
+    #fs{
+        font-size: 230%;
+        text-shadow: 0px 0px 5px gray;
+    }
+    
+    
+    
     .fdiv{
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .circle{
-        display: none
-    }
+    
     #footer{
         height: auto;
     }
-    #topheder{
-        flex-direction: column;
-        justify-content: center;
-    }
+    
     #second{
         flex-direction: column;
         justify-content: center;
     }
-    .iner_content{
-        text-align: center;
-        width: 100%;
-    }
+    
     #picture>img{
-        width: 100%;
+        margin-top: 3%;
+        width: 80vw;
     }
     #sample{
         flex-direction: column;
     }
     .hero{
         border-radius: 20px;
+
     }
     .detail2{
-        
-        flex-direction: column;
+       justify-content: space-evenly;
+       
+    }
+    .detail2 p{
+        margin-bottom: 0px;
+    }
+    .detail2 h4{
+        margin-bottom: 0px;
+    }
+    #subscrib h2{
+        margin-bottom: 0px;
+    }
+    #subscrib p{
+        margin-bottom: 0px;
     }
    
 }
 
 @media screen and (max-width:400px){
-
+    #fs{
+        font-size: 175%;
+        text-shadow: 0px 0px 5px gray;
+    }
     .center_content{
         flex-direction: column;
     }
-    .detail2{
-        display: none;
+    
+    #picture>img{
+        margin-top: 3%;
+        width: 95vw;
     }
 }
